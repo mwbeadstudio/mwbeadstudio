@@ -76,4 +76,25 @@ nav a:hover {
 .button:hover {
   background: #b57a6b;
   color: white;
+
+.gallery {
+  width: min(1200px, 90%);
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 45px;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  margin-top: 20px;
+}
 }
