@@ -66,7 +66,7 @@ em { color: var(--rose); font-weight: 400; }
 .hero-product { display: block; min-width: 0; text-decoration: none; }
 .hero-product-amethyst { grid-column: 1; grid-row: 1; }
 .hero-product-citrine { grid-column: 1; grid-row: 2; }
-.hero-product img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: .6rem; transition: transform .25s; }
+.hero-product img { width: 100%; height: auto; border-radius: .6rem; transition: transform .25s; }
 .hero-product span { display: block; margin-top: .6rem; color: var(--wine); font-size: .72rem; line-height: 1.4; }
 .hero-product:hover img { transform: translateY(-3px); }
 .hero-product:focus-visible { outline: 2px solid var(--rose); outline-offset: 5px; }
