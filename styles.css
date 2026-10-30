@@ -124,6 +124,24 @@ em { color: var(--rose); font-weight: 400; }
 .collection-note h2 { font-size: clamp(2.5rem, 4.5vw, 4.2rem); }
 .collection-note > p:not(.eyebrow) { max-width: 530px; margin: 0 auto 2.5rem; color: var(--muted); }
 
+.new-additions { background: var(--paper-deep); }
+.new-additions .section-heading { margin-bottom: 3rem; }
+.bracelet-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.bracelet-photos a { display: block; }
+.bracelet-photos img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; background: #171516; }
+.bracelet-story { margin-top: 3rem; }
+.bracelet-story h2, .bracelet-story h3 { max-width: 900px; font-size: clamp(2rem, 3.5vw, 3.6rem); }
+.bracelet-story > p:not(.eyebrow) { max-width: 800px; color: var(--muted); }
+.bracelet-meanings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin: 2rem 0 2.5rem; }
+.bracelet-meanings > div { padding-top: 1rem; border-top: 1px solid var(--line); }
+.bracelet-meanings dt { margin-bottom: .6rem; font-weight: 600; }
+.bracelet-meanings dd { margin: 0; color: var(--muted); font-size: .9rem; }
+.product-card-wide { grid-column: 1 / -1; scroll-margin-top: 2rem; }
+@media (max-width: 650px) {
+  .bracelet-photos { grid-template-columns: 1fr; gap: 1rem; }
+  .bracelet-meanings { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
 .custom-hero { padding-bottom: 8rem; }
 .custom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; align-items: center; background: var(--paper-deep); }
 .custom-visual { position: relative; min-height: 650px; display: grid; place-items: center; border-radius: 50% 50% 1rem 1rem; overflow: hidden; background: linear-gradient(145deg, #e8cec7, #c49a93); }
