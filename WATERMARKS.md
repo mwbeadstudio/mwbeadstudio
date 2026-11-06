@@ -16,3 +16,12 @@ The current copies were prepared with the built-in image generation/editing tool
 ## Editing prompt
 
 Use the source photograph as image 1 and `images/bracelet_2.png` as image 2. Replace the existing watermarks with the reference's faint, thin, pale-gray cursive `MW Bead Studio` pattern: approximately 35 degrees rising to the right, approximately 40% of image width per repeat, staggered rows approximately 22% of image height apart. Remove previous lettering completely; do not layer two styles. Preserve the original photograph, jewelry geometry, stone colors, bead counts, composition, and aspect ratio. The reference controls watermark styling only. Review the resulting copy against the reference, requesting a targeted correction if the old lettering remains.
+
+## November 2026 jadeite additions
+
+Prepared with the built-in imagegen editing tool; originals remain unchanged.
+
+- `1000099165.jpeg` -> `images/watermarked/jadeite-white-gold-bracelet.png`
+- `20261104_234016.jpeg` -> `images/watermarked/lavender-green-jadeite-bracelet.png`
+
+Prompt used for both (each source as image 1, `images/bracelet_2.png` as image 2): Add the standard faint neutral-gray thin elegant cursive "MW Bead Studio" watermark pattern from image 2. Repeat diagonally rising right about 35 degrees in staggered rows, each repeat about 40% image width, rows 22% image height, approximately 20% opacity. Preserve the source photograph, every bead, bead count, stone colors, spacers, cord, black fabric, composition and 3:4 aspect ratio. Image 2 controls watermark styling only.

@@ -70,6 +70,20 @@ em { color: var(--rose); font-weight: 400; }
 .hero-product span { display: block; margin-top: .6rem; color: var(--wine); font-size: .72rem; line-height: 1.4; }
 .hero-product:hover img { transform: translateY(-3px); }
 .hero-product:focus-visible { outline: 2px solid var(--rose); outline-offset: 5px; }
+.additions-carousel { width: 100%; max-width: 480px; min-width: 0; justify-self: center; }
+.carousel-slides { overflow: hidden; border-radius: .6rem; background: #171516; }
+.carousel-slide { display: block; color: white; text-decoration: none; }
+.carousel-slide[hidden], .carousel-controls[hidden] { display: none; }
+.carousel-slide img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; }
+.carousel-caption { display: block; min-height: 112px; padding: 1.2rem 1.4rem; background: var(--wine); }
+.carousel-caption strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.65rem; line-height: 1.2; }
+.carousel-caption > span { display: block; margin-top: .5rem; font-size: .75rem; }
+.carousel-controls { display: flex; align-items: center; gap: .7rem; margin-top: 1rem; }
+.carousel-controls button { min-width: 44px; min-height: 44px; padding: .5rem .8rem; border: 1px solid var(--line); border-radius: 2rem; background: var(--paper); color: var(--wine); font: inherit; cursor: pointer; }
+.carousel-controls button:hover { background: var(--paper-deep); }
+.carousel-controls .carousel-pause { margin-left: auto; font-size: .75rem; }
+.carousel-count { font-size: .75rem; font-variant-numeric: tabular-nums; }
+.additions-carousel a:focus-visible, .carousel-controls button:focus-visible { outline: 2px solid var(--rose); outline-offset: 4px; }
 @media (max-width: 650px) {
   .hero-collage { gap: .8rem; }
   .hero-collage .hero-image { width: 100%; min-height: 250px; }
