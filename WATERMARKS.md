@@ -25,3 +25,13 @@ Prepared with the built-in imagegen editing tool; originals remain unchanged.
 - `20261104_234016.jpeg` -> `images/watermarked/lavender-green-jadeite-bracelet.png`
 
 Prompt used for both (each source as image 1, `images/bracelet_2.png` as image 2): Add the standard faint neutral-gray thin elegant cursive "MW Bead Studio" watermark pattern from image 2. Repeat diagonally rising right about 35 degrees in staggered rows, each repeat about 40% image width, rows 22% image height, approximately 20% opacity. Preserve the source photograph, every bead, bead count, stone colors, spacers, cord, black fabric, composition and 3:4 aspect ratio. Image 2 controls watermark styling only.
+
+## November 2026 earring, ring, and necklace
+
+Prepared with the built-in imagegen editing tool. The original JPGs remain unchanged; all three website-ready copies use `images/bracelet_2.png` as the watermark style reference.
+
+- `1000048482.jpg` -> `images/watermarked/jadeite-pearl-sterling-earring.png`
+- `1000048483.jpg` -> `images/watermarked/green-jadeite-sterling-ring.png`
+- `1000048484.jpg` -> `images/watermarked/jadeite-barrel-gold-filled-necklace.png`
+
+Prompt for each: Preserve the real jewelry, stone color and shape, metal details, wearer, and portrait framing. Gently balance exposure and clarity where helpful. Add the reference's faint neutral-gray thin cursive `MW Bead Studio` pattern, repeated diagonally rising right about 35 degrees in staggered rows, approximately 40% of the image width per repeat and 22% of the image height between rows. The reference controls watermark styling only.
