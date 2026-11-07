@@ -20,6 +20,31 @@ document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
+const collectionFilter = document.querySelector('[data-collection-filter]');
+if (collectionFilter) {
+  const cards = [...document.querySelectorAll('#product-grid .product-card')];
+  const count = document.querySelector('[data-filter-count]');
+  let initialized = false;
+
+  const filterCollection = () => {
+    const category = collectionFilter.value;
+    let visible = 0;
+    cards.forEach((card) => {
+      const matches = category === 'all' || card.dataset.category === category;
+      card.hidden = !matches;
+      if (matches) {
+        visible += 1;
+        if (initialized) card.classList.add('visible');
+      }
+    });
+    count.textContent = `${visible} ${visible === 1 ? 'piece' : 'pieces'}`;
+    initialized = true;
+  };
+
+  collectionFilter.addEventListener('change', filterCollection);
+  filterCollection();
+}
+
 document.querySelectorAll('[data-carousel]').forEach((carousel) => {
   const slides = [...carousel.querySelectorAll('[data-slide]')];
   const controls = carousel.querySelector('.carousel-controls');

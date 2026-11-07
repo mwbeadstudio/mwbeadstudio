@@ -48,8 +48,20 @@
     </section>
 
     <section class="collection section-pad">
-      <div class="product-grid">
-        <article id="jadeite-pearl-sterling-earring" class="product-card reveal" aria-labelledby="jadeite-pearl-sterling-earring-title">
+      <div class="collection-filter">
+        <label for="collection-category">View pieces</label>
+        <select id="collection-category" data-collection-filter aria-controls="product-grid">
+          <option value="all">All</option>
+          <option value="bracelet">Bracelets</option>
+          <option value="earring">Earrings</option>
+          <option value="ring">Rings</option>
+          <option value="necklace">Necklaces</option>
+          <option value="charm">Charms</option>
+        </select>
+        <p class="collection-filter-count" data-filter-count role="status" aria-live="polite"></p>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article id="jadeite-pearl-sterling-earring" class="product-card reveal" data-category="earring" aria-labelledby="jadeite-pearl-sterling-earring-title">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Jadeite%20Pearl%20and%20Sterling%20Silver%20Earring%20Inquiry">
             <img src="images/watermarked/jadeite-pearl-sterling-earring.png" alt="Burmese Grade A jadeite bead earring with pearls and a sterling silver bead, worn on an ear" width="1024" height="1536" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -63,7 +75,7 @@
           </div>
         </article>
 
-        <article id="green-jadeite-sterling-ring" class="product-card reveal" aria-labelledby="green-jadeite-sterling-ring-title">
+        <article id="green-jadeite-sterling-ring" class="product-card reveal" data-category="ring" aria-labelledby="green-jadeite-sterling-ring-title">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Green%20Jadeite%20Sterling%20Silver%20Ring%20Inquiry">
             <img src="images/watermarked/green-jadeite-sterling-ring.png" alt="Sterling silver ring with a dark green Burmese Grade A jadeite bead" width="1024" height="1536" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -77,7 +89,7 @@
           </div>
         </article>
 
-        <article id="jadeite-barrel-gold-filled-necklace" class="product-card reveal" aria-labelledby="jadeite-barrel-gold-filled-necklace-title">
+        <article id="jadeite-barrel-gold-filled-necklace" class="product-card reveal" data-category="necklace" aria-labelledby="jadeite-barrel-gold-filled-necklace-title">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Jadeite%20Barrel%20Bead%20Gold-Filled%20Paperclip%20Necklace%20Inquiry">
             <img src="images/watermarked/jadeite-barrel-gold-filled-necklace.png" alt="14K gold-filled paperclip necklace with a light green Burmese Grade A jadeite barrel bead" width="1024" height="1536" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -91,7 +103,7 @@
           </div>
         </article>
 
-        <article id="jadeite-white-gold-bracelet" class="product-card reveal" aria-labelledby="jadeite-white-gold-title">
+        <article id="jadeite-white-gold-bracelet" class="product-card reveal" data-category="bracelet" aria-labelledby="jadeite-white-gold-title">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Burmese%20Grade%20A%20Jadeite%20Bracelet%20with%2018K%20White%20Gold%20Filled%20Spacers%20Inquiry">
             <img src="images/watermarked/jadeite-white-gold-bracelet.png" alt="Burmese Grade A jadeite bead bracelet with 18K white gold filled spacers and a dark cord" width="450" height="600" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -105,7 +117,7 @@
           </div>
         </article>
 
-        <article id="lavender-green-jadeite-bracelet" class="product-card reveal" aria-labelledby="lavender-green-jadeite-title">
+        <article id="lavender-green-jadeite-bracelet" class="product-card reveal" data-category="bracelet" aria-labelledby="lavender-green-jadeite-title">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Lavender%20and%20Green%20Burmese%20Grade%20A%20Jadeite%20Bracelet%20Inquiry">
             <img src="images/watermarked/lavender-green-jadeite-bracelet.png" alt="Light lavender and light green Burmese Grade A jadeite beads with sterling silver spacers and a cord clasp" width="450" height="600" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -119,7 +131,7 @@
           </div>
         </article>
 
-        <article id="couples-pixiu-bracelets" class="product-card product-card-wide reveal" aria-labelledby="couples-pixiu-title">
+        <article id="couples-pixiu-bracelets" class="product-card product-card-wide reveal" data-category="bracelet" aria-labelledby="couples-pixiu-title">
           <div class="bracelet-photos">
             <a href="images/watermarked/homepage_10_29(1)-watermarked.png" aria-label="View full photo of the couples' Pixiu bracelets"><img src="images/watermarked/homepage_10_29(1)-watermarked.png" alt="Couples' sterling silver Pixiu bracelets with matte black onyx and metallic hematite beads" width="450" height="600" loading="lazy"></a>
             <a href="images/watermarked/homepage_10_29(2)-watermarked.png" aria-label="View full close-up photo of the Pixiu bracelets"><img src="images/watermarked/homepage_10_29(2)-watermarked.png" alt="Close-up of the pair's sterling silver Pixiu details and black beaded strands" width="500" height="600" loading="lazy"></a>
@@ -140,7 +152,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="bracelet">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Evil%20Eye%20Bracelet%20Inquiry">
             <img src="images/watermarked/hindu_evil_eye_infant_bracelets.png" alt="Matching red cord evil eye baby bracelets" loading="lazy">
             <span>Inquire ↗</span>
@@ -154,7 +166,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="other">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Turquoise%20Rosary%20Inquiry">
             <img src="images/watermarked/female_rosary_turquoise.png" alt="Turquoise beaded rosary with silver devotional details" loading="lazy">
             <span>Inquire ↗</span>
@@ -168,7 +180,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="other">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Black%20Bead%20Rosary%20Inquiry">
             <img src="images/watermarked/male_rosary_blk.png" alt="Black beaded rosary with silver crucifix" loading="lazy">
             <span>Inquire ↗</span>
@@ -182,7 +194,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="charm">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Lucky%20Charm%20Inquiry">
             <img src="images/watermarked/lucky_charm_1.png" alt="Red knotted lucky charm with pink flower and gold accent" loading="lazy">
             <span>Inquire ↗</span>
@@ -196,7 +208,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="ring">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Amethyst%20Sterling%20Silver%20Wire%20Ring%20Inquiry">
             <img src="images/watermarked/ring_1.png" alt="Amethyst bead ring handcrafted with sterling silver wire" loading="lazy">
             <span>Inquire ↗</span>
@@ -210,7 +222,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="ring">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Black%20Onyx%20Sterling%20Silver%20Wire%20Ring%20Inquiry">
             <img src="images/watermarked/ring_2.png" alt="Black onyx bead ring handcrafted with sterling silver wire" loading="lazy">
             <span>Inquire ↗</span>
@@ -224,7 +236,7 @@
           </div>
         </article>
 
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-category="ring">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Rose%20Quartz%20Sterling%20Silver%20Wire%20Ring%20Inquiry">
             <img src="images/watermarked/ring_3.png" alt="Rose-shaped rose quartz ring handcrafted with sterling silver wire" loading="lazy">
             <span>Inquire ↗</span>
@@ -238,7 +250,7 @@
           </div>
         </article>
 
-        <article id="earrings" class="product-card reveal">
+        <article id="earrings" class="product-card reveal" data-category="earring">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Gemstone%20Earring%20Trio%20Inquiry">
             <img src="images/watermarked/earrings_1.png" alt="Three pairs of handmade amazonite, garnet, and pearl earrings with sterling silver hooks" loading="lazy">
             <span>Inquire ↗</span>
@@ -252,7 +264,7 @@
           </div>
         </article>
 
-        <article id="amethyst-jade-bracelet" class="product-card reveal">
+        <article id="amethyst-jade-bracelet" class="product-card reveal" data-category="bracelet">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Amethyst%20and%20Jade%20Flower%20Bracelet%20Inquiry">
             <img src="images/watermarked/bracelet_2.png" alt="Amethyst bead bracelet with a jade flower charm and adjustable cord" loading="lazy">
             <span>Inquire ↗</span>
@@ -265,7 +277,7 @@
             <p>Faceted amethyst beads · jade flower charm · adjustable cord</p>
           </div>
         </article>
-        <article id="citrine-clear-quartz-bracelet" class="product-card reveal">
+        <article id="citrine-clear-quartz-bracelet" class="product-card reveal" data-category="bracelet">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Citrine%20and%20Clear%20Quartz%20Bracelet%20Inquiry">
             <img src="images/watermarked/citrine_and_clear_quartz_bracelet.png" alt="Citrine and clear quartz bead bracelet with golden knotted cord and silver-colored accents" loading="lazy">
             <span>Inquire ↗</span>
@@ -279,7 +291,7 @@
           </div>
         </article>
 
-        <article id="blue-crystal-black-beaded-bracelet" class="product-card reveal">
+        <article id="blue-crystal-black-beaded-bracelet" class="product-card reveal" data-category="bracelet">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Blue%20Crystal%20and%20Black%20Beaded%20Bracelet%20Inquiry">
             <img src="images/watermarked/Blue%20Crystal%20and%20Black%20Beaded%20Bracelet.png" alt="Blue crystal and faceted black bead bracelet with clear beads, gold-colored accents, and adjustable black cord" loading="lazy">
             <span>Inquire ↗</span>
@@ -293,7 +305,7 @@
           </div>
         </article>
 
-        <article id="spinel-clear-crystal-bracelet" class="product-card reveal">
+        <article id="spinel-clear-crystal-bracelet" class="product-card reveal" data-category="bracelet">
           <a class="product-image" href="mailto:mwbeadstudio@gmail.com?subject=Spinel%20and%20Clear%20Crystal%20Bracelet%20Inquiry">
             <img src="images/watermarked/bracelet_10_29-watermarked.png" alt="Black spinel and clear crystal bead bracelet with gold vermeil flower spacers and sterling silver hardware" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -306,7 +318,7 @@
             <p>Sterling silver hardware &middot; spinel beads &middot; clear crystal beads &middot; gold vermeil flower spacers</p>
           </div>
         </article>
-        <article id="sugilite-pearl-hoop-earrings" class="product-card reveal">
+        <article id="sugilite-pearl-hoop-earrings" class="product-card reveal" data-category="earring">
           <a class="product-image product-image-portrait" href="mailto:mwbeadstudio@gmail.com?subject=Sugilite%20and%20Pearl%20Hoop%20Earrings%20Inquiry">
             <img src="images/watermarked/sugilite-pearl-hoop-earrings-watermarked.png" alt="Gold-filled hoop earrings with freshwater pearls, purple sugilite tube beads, and black gold-filled drops" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -320,7 +332,7 @@
           </div>
         </article>
 
-        <article id="sugilite-pearl-drop-earrings" class="product-card reveal">
+        <article id="sugilite-pearl-drop-earrings" class="product-card reveal" data-category="earring">
           <a class="product-image product-image-portrait" href="mailto:mwbeadstudio@gmail.com?subject=Sugilite%20and%20Pearl%20Drop%20Earrings%20Inquiry">
             <img src="images/watermarked/sugilite-pearl-drop-earrings-watermarked.png" alt="Drop earrings with freshwater pearls, purple sugilite tube beads, and pink gold-filled drops" loading="lazy">
             <span>Inquire &#8599;</span>
@@ -334,7 +346,7 @@
           </div>
         </article>
 
-        <article id="aquamarine-quartz-citrine-bracelet" class="product-card product-card-centered reveal">
+        <article id="aquamarine-quartz-citrine-bracelet" class="product-card product-card-centered reveal" data-category="bracelet">
           <a class="product-image product-image-natural" href="mailto:mwbeadstudio@gmail.com?subject=Aquamarine%20Clear%20Quartz%20and%20Citrine%20Bracelet%20Inquiry">
             <img src="images/watermarked/aquamarine-quartz-citrine-bracelet-watermarked.png" alt="Aquamarine, clear quartz, and citrine bead bracelet with sterling silver spacers and lobster claw clasp" loading="lazy">
             <span>Inquire &#8599;</span>
